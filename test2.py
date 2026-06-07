@@ -43,8 +43,7 @@ def build_compatible_model():
         weights=None,
         pooling="avg",
     )
-
-    # Match older Teachable Machine export layer names.
+    
     base_model._name = "sequential_1"
 
     rebuilt_model = Sequential(
